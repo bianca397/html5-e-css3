@@ -5,29 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="html.ico" type="image/x-icon">
-    <title>Formatação de Textos</title>
-    <style> mark {background-color: cornflowerblue;} </style>
+    <title>Outras formatações</title>
 </head>
 <body>
-    <h1>Principais formatações</h1>
-    <h2>Negrito / Destaque</h2>
-    <p>Nesta frase temos um <b>termo em negrito</b> usando a tag b(não semantica). </p>
-    <p>Nesta frase tenho um <strong>termo em destaque</strong> usando a tag STRONG(semantica).</p>
-    <h2>Itálico / Enfase</h2>
-    <p>Nesta frase, temos um <i>termo em itálico</i> usando a tag I(não semantica).</p>
-    <p>Nesta frase, temos um <em>termo em enfase</em> usando a tag EM(semantica).</p>
-    <h1>Texto marcado</h1>
-    <p>Podemos criar também um <mark> texto marcado</mark> usando a tag MARK </p>
-    <p>E no outro paragrafo, temos <mark>outro texto marcado</mark> no final</p>
-    <h2>Texto grande e pequeno</h2>
-    <p>Estamos criando um <big>texto grande</big> e um <small>texto pequeno</small> nesse paragrafo.</p>
-    <h2>Texto deletado</h2>
-    <p>Podemos marcar <del>um texto como excluido</del> para indicar que ele deve ser lido, mas não considerado.</p>
-    <h2>Texto inserido</h2>
-    <p>Podemos marcar <ins>um texto como inserido</ins> para dar uma enfase e indicar que ele foi adicionado depois.</p>
-    <h2>Texto sobrescrito</h2>
-    <p>Para inserir coisas do tipo x<sup>2O</sup>+3</p> <!--sup-->
-    <h2>Texto subscrito</h2>
-    <p>Para inserir coisas do tipo H<sub>2</sub>O</p> <!--sub-->
+    <h1>Outras formatações</h1>
+    <h2>Código fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript.</p> <!--utilizado a tag CODE para uniformizar as letras-->
+    <pre>
+        <code>
+    num = int(input('Digite um número'))
+    if num X 2 == 0
+        print(f'O número {num} é PAR)
+    else:
+        print(f'O número {num} é IMPAR)
+    print('Fim do programa')
+        </code>
+    </pre>  <!-- utilizado o PRE com o CODE, que além de uniformizar as letras, uniformiza também os espaços e as colunas-->
+    <h2>Citações</h2>
+    <p><q>Como diria o pai de um amigo: O computador é um burro muito rápido</q>  </p>
+    <h2>Citações completas</h2>
+    <p>Segundo Maurício Samy Silva, em seu livro Fundamentos de HTML5 e CSS3</p>
+    <blockquote cite="https://www.google.com.br/books/edition/Fundamentos_de_HTML5_e_CSS3/ZyJyDwAAQBAJ?hl=pt-BR&gbpv=1&dq=html+e+css&printsec=frontcover">
+        Desde a invenção da web, em 1992, por Tim Berners-Lee, a HTML evoluiu por oito versões
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
+    
+    
 </body>
-</html> 
+</html>
